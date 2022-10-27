@@ -1,0 +1,45 @@
+.iframe__detail {
+  height: 23rem;
+}
+
+.main__detail {
+  padding: 1.5rem;
+  font-size: clamp(18px, 3vw, 24px);
+  line-height: 1.5em;
+  word-break: break-word;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main__button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #000;
+  background-color: #eaeaea;
+  border: none;
+  padding: 9px 12px;
+  border-radius: 4px;
+}
+
+.main__article > p {
+  font-size: 14px;
+  color: gray;
+}
+
+.main__article > p > span {
+  color: #000;
+  opacity: 110;
+}
+
+.related__video {
+  margin: 1.5rem;
+}
+
+@media only screen and (min-width: 992px) {
+  .main__detail {
+    width: clamp(480px, 65%, 960px);
+    margin: clamp(1em, 10vh, 3em) auto;
+  }
+}

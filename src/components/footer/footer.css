@@ -1,0 +1,37 @@
+.footer__container {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #cecece;
+  margin-top: 2rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footer__sosmed {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e40803;
+  font-size: 12;
+}
+
+.footer__legend {
+  width: 100%;
+  text-align: center;
+  padding: 1em 0;
+  background-color: #000;
+  color: #fff;
+}
+
+@media only screen and (min-width: 600px) {
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

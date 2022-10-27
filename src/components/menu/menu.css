@@ -1,0 +1,35 @@
+.menu__container {
+  width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.menu__wrapper {
+  padding-top: 15%;
+  height: 50%;
+  text-align: center;
+  overflow-y: auto;
+  line-height: 3rem;
+}
+
+.menu__wrapper > img {
+  position: absolute;
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  right: 1em;
+  top: 1em;
+  cursor: pointer;
+}
+
+.menu__wrapper > div {
+  cursor: pointer;
+}
+
+.menu__wrapper > div:hover {
+  color: red;
+}

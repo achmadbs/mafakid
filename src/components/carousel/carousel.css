@@ -1,0 +1,86 @@
+.card__container {
+  min-height: 23rem;
+  position: relative;
+}
+
+.card__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.card__image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #000, transparent);
+  opacity: 0.8;
+}
+
+.card__image > img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+}
+
+.carousel .control-dots .dot.selected {
+  background-color: red;
+}
+
+.card__details {
+  position: absolute;
+  top: clamp(110px, 25%, 160px);
+  left: 5%;
+  right: 5%;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1em, 10vh, 1.5em);
+  color: #fff;
+  text-align: justify;
+}
+
+.card__details > h2 {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 1.25em;
+  font-weight: 700;
+  font-size: clamp(1em, 7vw, 2.5em);
+}
+
+.card__actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.button__style {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 0.75em 1em;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.red__button {
+  background-color: red;
+  color: #fff;
+}
+
+.white__button {
+  background-color: #fff;
+  color: red;
+}
